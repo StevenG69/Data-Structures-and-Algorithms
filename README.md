@@ -27,3 +27,51 @@ The solution must use appropriate **graph data structures** and **graph algorith
 
 ### 4. User Queries
 Repeated blocks until `From: done`:
+
+From: <landmark>
+To: <landmark>
+Departure time: <hhmm>
+
+---
+
+## 🧪 Stages & Requirements
+
+### ✅ Stage 1 (2 marks)
+- Build a data structure from input.
+- Only **direct connections** (walk or ferry) are tested.
+- Output the single direct route or `No route.`
+
+### ✅ Stage 2 (2 marks)
+- Implement **pathfinding on walking-only graph**.
+- Input guarantees **exactly one simple path** (no ferries, departure time = `0000`).
+- Output full walking itinerary with timestamps.
+
+### ✅ Stage 3 (4 marks)
+- Support **mixed walking + ferry routes**.
+- Must **arrive at ferry departure point on or before ferry departure time**.
+- At most **one valid route** exists per query.
+
+### ✅ Stage 4 (2 marks)
+- Handle **multiple possible routes**.
+- Choose the route with **shortest total travel time** (including waiting).
+- Guaranteed **unique optimal route**.
+
+---
+
+## 🖨️ Output Format
+
+For each valid route:
+```text
+Walk <t> minute(s):
+<hhmm> <landmark>
+<hhmm> <next_landmark>
+Ferry <t> minute(s):
+<hhmm> <landmark>
+<hhmm> <next_landmark>
+...
+
+If no valid route:
+No route.
+
+On termination:
+Happy travels!

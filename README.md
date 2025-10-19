@@ -36,22 +36,22 @@ Departure time: <hhmm>
 
 ## 🧪 Stages & Requirements
 
-### ✅ Stage 1 (2 marks)
+### ✅ Stage 1
 - Build a data structure from input.
 - Only **direct connections** (walk or ferry) are tested.
 - Output the single direct route or `No route.`
 
-### ✅ Stage 2 (2 marks)
+### ✅ Stage 2
 - Implement **pathfinding on walking-only graph**.
 - Input guarantees **exactly one simple path** (no ferries, departure time = `0000`).
 - Output full walking itinerary with timestamps.
 
-### ✅ Stage 3 (4 marks)
+### ✅ Stage 3
 - Support **mixed walking + ferry routes**.
 - Must **arrive at ferry departure point on or before ferry departure time**.
 - At most **one valid route** exists per query.
 
-### ✅ Stage 4 (2 marks)
+### ✅ Stage 4
 - Handle **multiple possible routes**.
 - Choose the route with **shortest total travel time** (including waiting).
 - Guaranteed **unique optimal route**.
